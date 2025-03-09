@@ -1,0 +1,49 @@
+To-Do List Application Assignment
+Overview
+Create a dynamic to-do list application using Webpack, JavaScript modules, classes, and objects. Your to-do items will be represented as objects, which can be generated using factories or constructors/classes.
+
+Requirements
+To-Do Item Properties
+Each to-do item should have the following minimum properties:
+
+Title
+Description
+Due Date
+Priority
+You may also consider adding:
+
+Notes
+Checklist
+Project Management
+The application should support multiple projects or separate lists of to-dos.
+Upon opening the app, there should be a default project where all to-dos are initially placed.
+Users should be able to create new projects and assign to-dos to specific projects.
+Application Logic
+Separate your application logic from the DOM-related functionality. This includes:
+
+Creating new to-dos
+Marking to-dos as complete
+Changing to-do priority
+User Interface Features
+The UI should allow users to:
+
+View all projects
+View all to-dos in each project (displaying at least the title and due date, with color coding for different priorities)
+Expand a single to-do to see/edit its details
+Delete a to-do
+External Libraries
+Consider using the following library for date manipulation:
+
+date-fns: Provides handy functions for formatting and manipulating dates and times.
+Data Persistence
+Since the application does not currently store data, all to-dos will disappear upon refreshing the page. Implement data persistence using the Web Storage API:
+
+Use localStorage to save projects and to-dos on the user's computer.
+Create a function to save data to localStorage whenever a new project or to-do is created.
+Implement another function to retrieve data from localStorage when the app is first loaded.
+Additional Tips
+Ensure your app does not crash if the data you want to retrieve from localStorage is not present.
+Use DevTools to inspect data saved in localStorage:
+Open the Application tab in DevTools.
+Click on the Local Storage tab under Storage.
+Remember that localStorage uses JSON for data storage. When retrieving data, it will also be in JSON format. Note that functions cannot be stored in JSON, so you will need to reattach methods to your object properties after fetching them.

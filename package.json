@@ -1,0 +1,23 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "A todo list application",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.11.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
